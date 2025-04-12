@@ -9,6 +9,7 @@ async def read_xlsx(file_path: str | Path) -> Union[DataFrame, str]:
     try:
         return pd.read_excel(file_path)
     except Exception as e:
+        print(f'read_xlsx ERROR: {e}')
         return f'ERROR: {e}'
 
 
