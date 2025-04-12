@@ -22,6 +22,7 @@
   - [Установка зависимостей](#установка-зависимостей)
 - [Конфигурация](#конфигурация)
 - [Запуск бота](#запуск-бота)
+- [Примеры данных для таблицы](#примеры-данных-для-таблицы)
 - [Контакты и ссылки](#контакты-и-ссылки)
 
 ## Требования
@@ -70,6 +71,15 @@ BOT_TOKEN="0000000000:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 ```bash
 python main.py
 ```
+
+## Примеры данных для таблицы
+```txt
+   title          url                                            xpath
+0  lamoda         https://www.lamoda.ru/b/34285/brand-adidasy3/  //span[starts-with(@class,"x-product-card") and not(contains(@class,"price-old"))]//text()
+1  spb-adidas     https://spb-adidas.ru/y3/                      //span[@class="price-new"]//text()
+2  adidas-moscow  https://adidas-moscow.ru/y3/                   //span[@class="price-new"]//text()
+```
+
 
 ## Контакты и ссылки
 Мой telegram: @Sova_y
